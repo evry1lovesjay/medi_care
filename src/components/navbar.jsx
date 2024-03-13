@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { useState } from "react";
 import NavLink from "./navLink";
+import Image from "next/image";
 
 const links = [
     {
@@ -84,18 +85,24 @@ const Navbar = () => {
       };
 
     return (
-        <div className='h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl'>
+        <div className='h-full flex items-center justify-between overflow-hidden bg-[#243928] pr-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl'>
             {/* LOGO */}
             <div className="md:flex xl:w-1/3">
-                <Link href="/" className="text-sm bg-amber-800 rounded-md p-2 font-semibold flex items-center justify-center">
-                    <span className="text-white mr-1 text-xl">GuidedHands</span>
+                <Link href="/" className="text-sm rounded-md font-semibold flex items-center justify-center">
+                <Image
+                src="/dark logo.jpg"
+                alt="Logo image"
+                width={150}
+                height={150}
+                />
+                    <span className="text-white mr-1 text-xl hidden">Guiding Hands</span>
                 </Link>                
             </div>
 
             {/* LINKS */}
-            <div className="hidden md:flex gap-4 w-2/3 justify-end">
+            <div className="hidden md:flex gap-4 w-2/3 justify-end text-[#DCF28C] h-full items-center">
                 {links.map((link) => (
-                    <NavLink link={link} key={link.title} />
+                    <NavLink link={link} key={link.title} className="h-full" />
                 ))}
             </div>
 
@@ -104,9 +111,9 @@ const Navbar = () => {
             <div className="md:hidden">
                 {/* MENU BUTTON */}
                 <button className="w-10 h-8 flex flex-col justify-between z-50 relative " onClick={() => setOpen((prev) => !prev)}>
-                    <div className={open ? "w-10 h-1 bg-white rounded origin-left" : "w-10 h-1 bg-black rounded origin-left"} variants={topVariants}></div>
-                    <div className={open ? "w-10 h-1 bg-white rounded origin-left" : "w-10 h-1 bg-black rounded origin-left"} variants={centerVariants}></div>
-                    <div className={open ? "w-10 h-1 bg-white rounded origin-left" : "w-10 h-1 bg-black rounded origin-left"} variants={bottomVariants}></div>
+                    <div className={open ? "w-10 h-1 bg-white rounded origin-left" : "w-10 h-1 bg-[#DCF28C] rounded origin-left"} variants={topVariants}></div>
+                    <div className={open ? "w-10 h-1 bg-white rounded origin-left" : "w-10 h-1 bg-[#DCF28C] rounded origin-left"} variants={centerVariants}></div>
+                    <div className={open ? "w-10 h-1 bg-white rounded origin-left" : "w-10 h-1 bg-[#DCF28C] rounded origin-left"} variants={bottomVariants}></div>
                 </button>
 
                 {/* MENU LIST */}
