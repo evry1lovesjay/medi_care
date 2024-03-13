@@ -7,10 +7,18 @@ const Footer= () => {
         <div className="h-full bg-[#243928]">
             <div className="text-[#91a663] flex flex-col justify-center items-center text-center">
                 <ul>
-                        <li className="m-8">Services</li>
-                        <li className="m-8">About Us</li>
-                        <li className="m-8">Jobs</li>
-                        <li className="m-8">Contact</li>
+                        <Link href="/services">
+                            <li className="m-8">Services</li>
+                        </Link>
+                        <Link href="/about">
+                            <li className="m-8">About Us</li>
+                        </Link>
+                        <Link href="/jobs">
+                            <li className="m-8">Jobs</li>
+                        </Link>
+                        <Link href="/contact">
+                            <li className="m-8">Contact</li>
+                        </Link>
                         <Link href="/faqs">
                             <li className="mb-4">FAQ</li>
                         </Link>

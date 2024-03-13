@@ -48,10 +48,6 @@ const Homepage = () => {
                     <div className="w-full bg-white rounded-lg shadow-md p-6 h-60 flex items-center justify-center">
                         <ul>
                             <li>
-                                <span>RN Delegation</span>
-                            </li>
-                        
-                            <li>
                                 <span>Hygiene and Bathing</span>
                             </li>
                             <li>
@@ -68,10 +64,6 @@ const Homepage = () => {
                     </div>
                     <div className="w-full bg-white rounded-lg shadow-md p-6 h-60 flex items-center justify-center">
                         <ul>
-                            
-                            <li>
-                                <span>Dementia Care Experts</span>
-                            </li>
                             <li>
                                 <span>Personalized Music Programming</span>
                             </li>
@@ -85,7 +77,7 @@ const Homepage = () => {
         </div>
 
         <div className="mt-8 text-justify">
-            With <b>Guiding Hands Care services</b>, you&#39;ll get the combined experience of people who&#39;ve been serving seniors in the ----- area for over ---- years. We will care for you and your loved ones like we would our own family. Contact us now to set up a complimentary evaluation.
+            With <b>Guiding Hands Care Services</b>, you&#39;ll get the combined experience of people who&#39;ve been serving seniors in the ----- area for over ---- years. We will care for you and your loved ones like we would our own family. Contact us now to set up a complimentary evaluation.
         </div>
     </div>
 
