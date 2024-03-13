@@ -20,7 +20,7 @@ const Footer= () => {
             <hr className="mx-8 border-gray-500" />
 
             <div className="text-center mt-2 pb-2 text-gray-500 flex flex-col gap-3 justify-center items-center">
-                <span className="text-xs">© Copyright 2024 Guiding Hand&#39;s Care Services - All Rights Reserved</span>
+                <span className="text-xs">© Copyright 2024 Guiding Hands Care Services - All Rights Reserved</span>
                 <Image src="/facebook-svgrepo-com.svg" alt="facebook logo" width={30} height={30} className="bg-[#91a663] rounded-full"/>
             </div>
         </div>
