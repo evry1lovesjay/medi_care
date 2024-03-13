@@ -89,13 +89,13 @@ const Navbar = () => {
             {/* LOGO */}
             <div className="md:flex xl:w-1/3">
                 <Link href="/" className="text-sm rounded-md font-semibold flex items-center justify-center">
-                <Image
-                src="/dark logo.jpg"
-                alt="Logo image"
-                width={150}
-                height={150}
-                />
-                    <span className="text-white mr-1 text-xl hidden">Guiding Hands</span>
+                    <Image
+                    src="/darkLogo.jpg"
+                    alt="Logo image"
+                    width={150}
+                    height={150}
+                    />
+                    <span className="hidden text-white mr-1 text-xl">Guiding Hands</span>
                 </Link>                
             </div>
 
